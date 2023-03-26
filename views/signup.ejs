@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/signup.css" rel="stylesheet" type="text/css">
+    <title>Home-Page</title>
+</head>
+<body> -->
+   
+<% layout('/layout/boilerplate.ejs') %>
+    <h1 class="heading">Sign-Up</h1>
+ <section class="sign-up ">
+    <div class="images">
+        <img src="/icons/signup-1.svg" alt="svg" class="signup-1">
+     <img src="/icons/signup.svg" alt="signup-2" class="signup-2">
+         <img src="/icons/clock.svg" alt="clock" class="clock">  
+    </div>
+    <form action="/signup" method="post" class="form">
+        <div class="form-name">
+         <label for="name">User Name</label><br>
+         <input type="text" name="name" required>
+      </div>
+      <div class="form-email">
+         <label for="email">Email</label><br>
+         <input type="text" name="email" placeholder="  example123@gmail.com" required>
+      </div>
+      <div class="form-password">
+         <label for="password">Password</label><br>
+         <input type="text" name="password" placeholder="  8+ characters" required>
+      </div>
+      <button class="button" type="submit">Sign-up</button>
+      <p class="account">Create account with:</p> 
+      <img src="/icons/facebook.svg" alt="facebook">   
+    </form>
+   
+</section>
+<!-- </body>
+</html> -->

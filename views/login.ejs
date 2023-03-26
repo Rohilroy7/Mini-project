@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/login.css" rel="stylesheet" type="text/css">
+    <title>Login-Page</title>
+</head>
+<body> -->
+          <!-- error flash -->
+          <% layout('/layout/boilerplate.ejs') %>
+          <% if(error && error.length){ %> 
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+               <%= error %> 
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <% } %>
+               
+    <section class="login">
+        <div class="login__page">
+            <div class="left__side">
+                <img src="/icons/loginPc.png" alt="lappy">
+            </div>  
+            <div class="right__side">
+                <div><img src="/icons/user-icon-2.svg" alt="user-avtar"></div>
+                <h1>User Login</h1>
+                <form action="/login" method="post">
+                <div class="right__input">
+                    <div class="input__pic">
+                    <input type="text" name="name" placeholder="USERNAME">
+                    <img src="/icons/user-icon.svg" alt="icon1">
+                    </div>
+                    <div class="input__pic">
+                    <input type="password" name="password" placeholder="PASSWORD" />
+                    <img src="/icons/LOCK-ICON.svg" alt="icon2">
+                    </div>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            </div>
+            <div class="box"></div>
+        </div>
+    
+
+
+         <!-- <div class="background">
+            <img src="/icons/loginPc.png" alt="lappy">
+        </div>
+        <form action="" method="get" class="form">
+        <img src="/icons/user-icon-2.svg" alt="user-avtar">
+        <h1>User Login</h1>
+            <div class="username">
+           <input type="text" name="name" placeholder="USERNAME" >
+        </div>
+        <div class="form-password">
+           <input type="text" name="password" placeholder=" PASSWORD">
+        </div>
+           <button class="button" type="submit">Login</button>
+           <div class="square">
+            
+           </div> 
+        </form> -->
+    </section>
+<!-- </body>
+</html> -->

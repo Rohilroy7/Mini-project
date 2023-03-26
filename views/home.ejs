@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/css/home.css">
+    <title>Home-page</title>
+</head>
+<body>
+   
+<% layout('/layout/boilerplate.ejs') %>
+    <% if(success && success.length){ %> 
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+           <%= success %> 
+           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <% } %>
+        
+    <!-- <nav>
+        <h1><img src="/icons/istockphoto-1341681278-612x612-removebg-preview.png" alt="logo">Helping Hand</h1>
+        <ol>
+            
+        <a href="/"><li><img src="/icons/home.svg" alt="home">Home</li></a>
+           <a href="/developer"> <li><img src="/icons/developer.svg" alt="dev">Developer</li></a>
+          <a href="/about">  <li><img src="/icons/about.svg" alt="abt">About</li></a>
+          <a href="/login"> <li><img src="/icons/login_nav.svg" alt="login">login</li></a> 
+        </ol>
+    </nav> -->
+    <section class="content ">
+        <div class="left_side ">
+            <h1>Web design <br> Landing Page</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita aut eligendi ullam ab reprehenderit nulla neque eaque quae ratione obcaecati deleniti totam optio perferendis vero necessitatibus aliquid qui, quidem tempora.
+            Numquam iure optio, harum eligendi quo, corrupti voluptatibus vitae cumque nihil, dignissimos sint tempore voluptates molestiae sed autem sequi incidunt maiores cum asperiores. Quo vitae, blanditiis magni voluptatum consequuntur nulla?</p>
+            <a href="/signup"><button type="button" class="button">Get Started</button></a>
+        </div>
+        <div class="polygon"></div>
+            <img src="icons/Lo-fi concept.gif" alt="lo-fi" class="right_side">
+    </section>
+<!-- 
+
+</body>
+</html>    -->
