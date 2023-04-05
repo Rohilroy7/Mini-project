@@ -10,6 +10,12 @@
 <body> -->
    
 <% layout('/layout/boilerplate.ejs') %>
+<% if(error && error.length){ %> 
+   <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <%= error %> 
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+     </div>
+     <% } %>
     <h1 class="heading">Sign-Up</h1>
  <section class="sign-up ">
     <div class="images">
@@ -19,8 +25,8 @@
     </div>
     <form action="/signup" method="post" class="form">
         <div class="form-name">
-         <label for="name">User Name</label><br>
-         <input type="text" name="name" required>
+         <label for="username">User Name</label><br>
+         <input type="text" name="username" required>
       </div>
       <div class="form-email">
          <label for="email">Email</label><br>

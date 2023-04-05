@@ -1,0 +1,35 @@
+<% layout('/layout/boilerplate')%>
+<section>
+    <div class="left-side">
+        <div class="image"></div>
+        
+        <h1>Name</h1>
+        <h5>Studies at <br>
+            Sikkim Manipal Institute of technology</h5>
+            <hr>
+            <h6><img src="/icons/ic_round-email.svg" alt="email"> gmail</h6>
+            <hr>
+            <h6><img src="/icons/mdi_resume.svg" alt="resume"> Resume</h6>
+            <hr>
+            <h6><img src="/icons/carbon_skill-level-intermediate.svg" alt="skills">Skills</h6>
+            <hr>
+            <h6>Edit profile</h6>
+    </div>
+    <div class="right-side">
+        <% for(let user of users) {%>
+            <div class="card cards">
+                    <div class="row ">
+                       
+                            <div class="card-body ">
+                        <h2 class="card-title">  <%=user.username %></h2>
+                        <h5 class="card-text"><%= user.email %> </h5>
+                        <div class="flex">
+                   <a class="btn btn-outline-success mx-5" href="/views/home.ejs "> Like</a> 
+                   <a class="btn btn-outline-info mx-5" href="/views/home.ejs ">comment</a> 
+                </div>
+                    </div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</section>

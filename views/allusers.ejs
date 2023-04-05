@@ -1,0 +1,18 @@
+<% layout('/layout/boilerplate.ejs') %>
+
+<h1>All Users</h1>
+<% for(let user of users) {%>
+    <div class="card" mb-3>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card-body">
+                <h2 class="card-title">  <%=user.username %></h2>
+                <h5 class="card-text"><%= user.email %> </h5>
+           <a    class="btn btn-outline-success" href="/views/home.ejs "> Connect</a>
+            </div>
+        </div>
+    </div>
+</div>
+<% } %>
+
+
